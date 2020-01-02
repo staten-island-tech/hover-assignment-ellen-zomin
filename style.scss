@@ -3,6 +3,7 @@ html {
     margin: 0;
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: black;
     }
     body {
     text-align: center;
@@ -19,44 +20,70 @@ html {
     }
     .pd6-photo {
     height: 20rem;
-    position: absolute;
     transition: all 0.3s;
     outline-offset: 1rem;
     }
     h1{
         text-align: center;
         font-size: 5rem;
+        color: white;
     }
     .burger {
-    top: 10rem;
-    left: 30%;
+        transition: all 0.3s ease-in-out 0s;
     }
-    .nuggets {
-    top: 40rem;
-    left: 30%;
+
+    .burger:hover{
+        cursor: default;
+        transform: rotate(360deg);
+        transition: all 0.3s ease-in-out 0s; 
+        border: 1px solid #ff12fc;
     }
+    
+    .nuggets{
+        top: 50rem;
+    left: 30%;
+        margin: 5px 5px 0 0;
+    }
+    .nuggets:hover {
+        background-color:#FFFFFF;
+        border: 1px solid #ff12fc;
+        color:#666;
+        text-decoration: none;
+        border-bottom:dotted;
+    }
+
     .fries {
     top: 70;
     left: 30%;
+    }
+    .fries:hover{
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
     }
     .ketchup{
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+
+    }
+    .ketchup:hover {
         margin: 20px auto;
         width: 250px;
         height: 250px;
         background: white;
         border-radius: 75px;
-        font-family: 'Montserrat', sans-serif;
         font-size: 20px;
         font-weight: lighter;
         letter-spacing: 2px;
-        transition: 1s box-shadow;
-    }
-    .ketchup:hover {
-        box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+        transition: 0.3s;
     }
     .soda{
         background: white;
@@ -74,5 +101,8 @@ html {
         animation-duration: 0.25s;
         border-left: 8px solid red;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .empty{
+        height: 5rem;
     }
     

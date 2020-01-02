@@ -4,6 +4,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: black;
 }
 
 body {
@@ -22,7 +23,6 @@ body {
 
 .pd6-photo {
   height: 20rem;
-  position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline-offset: 1rem;
@@ -31,21 +31,53 @@ body {
 h1 {
   text-align: center;
   font-size: 5rem;
+  color: white;
 }
 
 .burger {
-  top: 10rem;
-  left: 30%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.burger:hover {
+  cursor: default;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  border: 1px solid #ff12fc;
 }
 
 .nuggets {
-  top: 40rem;
+  top: 50rem;
   left: 30%;
+  margin: 5px 5px 0 0;
+}
+
+.nuggets:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #ff12fc;
+  color: #666;
+  text-decoration: none;
+  border-bottom: dotted;
 }
 
 .fries {
   top: 70;
   left: 30%;
+}
+
+.fries:hover {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .ketchup {
@@ -59,24 +91,19 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+.ketchup:hover {
   margin: 20px auto;
   width: 250px;
   height: 250px;
   background: white;
   border-radius: 75px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: lighter;
   letter-spacing: 2px;
-  -webkit-transition: 1s -webkit-box-shadow;
-  transition: 1s -webkit-box-shadow;
-  transition: 1s box-shadow;
-  transition: 1s box-shadow, 1s -webkit-box-shadow;
-}
-
-.ketchup:hover {
-  -webkit-box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .soda {
@@ -101,5 +128,9 @@ h1 {
   border-left: 8px solid red;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.empty {
+  height: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
