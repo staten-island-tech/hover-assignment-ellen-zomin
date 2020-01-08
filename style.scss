@@ -7,12 +7,12 @@ html {
     }
     body {
     text-align: center;
+    height: 160rem;
     }
     .gallery-parent {
     //text-align: center;
     margin: 0 auto;
     //width: 60rem;
-    height: 60rem;
     width: 40rem;
     }
     .gallery {
@@ -77,7 +77,6 @@ html {
     .ketchup:hover {
         margin: 20px auto;
         width: 250px;
-        height: 250px;
         background: white;
         border-radius: 75px;
         font-size: 20px;
@@ -103,14 +102,22 @@ html {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     .button-text{
+        background-color: #4CAF50; /* Green */
         border: none;
-        background-color: inherit;
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
         display: inline-block;
+        font-size: 16px;
     }
+
     .button-text:hover{
-        background: #ff12fc;
+        margin: 20px auto;
+        width: 250px;
+        color: aquamarine;
+         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        font-weight: lighter;
     }
-    .default{color:blueviolet;}
+    
+    
